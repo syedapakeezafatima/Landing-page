@@ -1,0 +1,745 @@
+\body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Dark background */
+    color: #fff; /* White text color */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000; /* Background matches design */
+    
+}
+
+.navbar .logo img {
+    width: 120px;
+}
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Spacing between links */
+    padding-left: 0;
+    padding-right: 20px;
+    border: 1px solid #fff; /* White border around nav links */
+    border-radius: 50px; /* Rounded corners */
+    transition: all 0.3s ease-in-out;
+    background-color: transparent; /* Optional: add a background if needed */
+}
+
+.nav-links li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px; /* Font size for links */
+    font-weight: 100; /* Slightly bolder text */
+    padding: 18px 28px; /* Padding inside links */
+    transition: color 0.3s ease;
+}
+
+/* Hover and Active State */
+.nav-links a:hover, 
+.nav-links .active {
+    color: #F58C36; /* Orange color on hover and active state */
+}
+
+/* Nav Actions (Search Icon and Signup Button) */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 28px; /* Spacing between search icon and sign up button */
+}
+
+.search-icon i {
+    color: white;
+    font-size: 22px; /* Font size for search icon */
+    cursor: pointer;
+}
+
+/* Sign Up Button */
+.signup-btn {
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 2px solid #F58C36;
+    color: #F58C36;
+    font-size: 18px; /* Font size for the button */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #ef730c; /* Background becomes orange on hover */
+    color: #fff; /* Text becomes white on hover */
+}
+
+/* Hamburger Icon for Mobile */
+.hamburger-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #000;
+}
+
+.hero-content h1 {
+    color: #ff7a00;
+    font-size: 60px; /* Larger font size */
+}
+
+.hero-content h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.hero-buttons .btn {
+    padding: 15px 30px;
+    border: none;
+    background-color: #ff7a00;
+    color: white;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.hero-buttons .about-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.hero-image img {
+    width: 500px;
+}
+
+
+/* Offers Section Styles */
+.offers {
+    padding: 50px;
+    background-color: #000;
+    color: white;
+}
+
+.offers h3 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.offers-slider {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping of cards on smaller screens */
+    justify-content: center; /* Center cards horizontally */
+    margin: 0 auto;
+}
+
+.offer-card {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 310px; /* Width for the cards */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 0 10px; /* Margin between cards */
+}
+
+.offer-card:hover {
+    background-color: #2e2e2e;
+    transform: translateY(-10px);
+}
+
+.offer-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.offer-card h3 {
+    font-size: 24px;
+    color: #fdfbf9;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+
+/* Special Coffee Section */
+.special-coffee {
+    padding: 50px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.special-coffee-info {
+    flex: 1;
+    max-width: 40%;
+    margin-bottom: 30px; /* Adds spacing on smaller screens */
+}
+
+.special-coffee-info h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.special-coffee-info p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.contact-btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #F58C36;
+    color: white;
+    border-radius: 25px;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #D6752C;
+}
+
+
+
+.coffee-cards {
+    display: flex;
+    gap: 10px;
+    flex: 2;
+    justify-content: flex-end;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-top: 20px;
+   border-radius: 10px;
+    padding-left: 20px; /* Adjust this value as needed */
+}
+
+.coffee-card:hover {
+    transform: translateY(-10px);
+}
+
+.coffee-card img {
+    opacity: 0.6;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.coffee-card-content {
+    padding: 20px;
+}
+
+.coffee-card-content h3 {
+    font-size: 22px;
+    color: #F58C36;
+    margin-bottom: 10px;
+}
+
+.coffee-card-content p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.price-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-order span {
+    font-size: 18px;
+    color: white;
+}
+
+.order-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #F58C36;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #D6752C;
+}
+
+/* Coffee Bean Banner Section */
+.coffee-bean-banner {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 120px 10px;
+    background-color: #000; /* Optional: You can set a background color to match the design */
+}
+
+.coffee-bean-banner img {
+    opacity: 0.6;
+    width: 90%;
+    max-width: 1200px; /* Ensures the image doesn't become too large */
+    height: auto;
+    border-radius: 15px; /* Optional: Slightly rounded corners for a smoother look */
+}
+
+/* Banner Content Overlay */
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+   
+    border-radius: 10px;
+    width: 90%; /* Ensure text stays within a reasonable width */
+    max-width: 800px; /* Limits the content width */
+    text-align: center; /* Centers the text */
+}
+
+/* Banner Heading */
+.banner-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #f2efed; /* Optional: Orange color for the heading */
+}
+
+/* Banner Paragraph */
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff; /* Ensures paragraph text is clearly visible */
+}
+
+/* Explore Button */
+.explore-btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #F58C36;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px; /* Adjusted font size */
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #D6752C;
+}
+
+/* Happy Customers Section */
+.happy-customers {
+    padding: 50px 50px;
+    background-color: #000;
+    text-align: center;
+}
+
+.happy-customers h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.customer-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.customer-card img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.customer-rating {
+    margin-top: 10px;
+}
+
+/* Newsletter Section */
+
+.newsletter-section {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 10px auto;
+    flex-wrap: wrap; /* Add for responsiveness */
+}
+
+.newsletter-content {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.newsletter-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.newsletter-content p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.newsletter-form button {
+    background-color: #d37d2f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #b66422;
+}
+
+.newsletter-image {
+    flex: 1;
+    text-align: right;
+}
+
+.newsletter-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    margin: 10px;
+    max-width: 200px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom p {
+    text-align: center;
+}
+
+/* Responsive Media Queries */
+
+/* For screens larger than 1024px */
+@media (min-width: 1024px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+}
+
+/* For tablets and small devices (below 1024px) */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none; /* Hide the links on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #000; /* Set a background color for the dropdown */
+        border-radius: 0; /* Remove rounded corners */
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-actions {
+        display: none; /* Hide search icon and sign up button on small screens */
+    }
+
+    .hamburger-icon {
+        display: block; /* Show hamburger icon on small screens */
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .hero-content h2 {
+        font-size: 34px;
+    }
+
+    .hero-image img {
+        width: 350px;
+        margin-top: 20px;
+    }
+    .offers-slider {
+        margin: 0 30px; /* Reduce margins on tablets */
+    }
+
+    .offer-card {
+        width: 280px; /* Smaller width for tablets */
+    }
+    .special-coffee {
+       
+        justify-content: center;
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        text-align: center;
+    }
+
+    .special-coffee-info {
+        justify-content: center;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .coffee-cards {
+        margin-left: 7%;
+        text-align: center;
+        justify-content: center; /* Center coffee cards on tablets */
+    }
+
+    /* Show hamburger icon on small devices */
+    .hamburger-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        margin-left: 70%;
+    }
+
+    /* Hide nav-links by default on small screens */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Show nav-links when hamburger icon is clicked */
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-column {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    /* Hide search icon and sign-up button on small screens */
+    .nav-actions .search-icon, .nav-actions .signup-btn {
+        display: none;
+    }
+    .coffee-bean-banner {
+        padding: 80px 10px; /* Reduced padding on smaller screens */
+    }
+
+    .banner-content h2 {
+        font-size: 28px; /* Smaller heading size */
+    }
+
+    .banner-content p {
+        font-size: 16px; /* Adjust paragraph font size */
+    }
+
+    .explore-btn {
+        font-size: 14px; /* Adjust button font size */
+        padding: 10px 20px;
+    }
+}
+
+/* For small screens and mobile devices (below 768px) */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 20px; /* Adjust gap between links on small screens */
+    }
+
+    .signup-btn {
+        font-size: 16px; /* Smaller font size for the sign up button */
+        padding: 8px 20px; /* Adjust padding for smaller button */
+    }
+
+    .search-icon i {
+        font-size: 20px; /* Slightly smaller search icon */
+    }
+
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+    .offers h3 {
+        font-size: 32px; /* Smaller title font size on mobile */
+        margin-left: 0;
+    }
+
+    .offers-slider {
+        margin: 0 10px; /* Further reduce margins on smaller screens */
+    }
+
+    .offer-card {
+        justify-content: center;
+        width: 100%; /* Full-width cards on mobile */
+        margin: 20px 0;
+    }
+    .special-coffee-info h2 {
+        font-size: 32px; /* Reduce title size */
+    }
+
+    .special-coffee-info p {
+        font-size: 18px; /* Reduce paragraph size */
+    }
+
+
+    .customer-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    newsletter-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-content, .newsletter-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .newsletter-form {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 80%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        max-width: 100%;
+        text-align: center;
+    }
+    .coffee-bean-banner img {
+        width: 100%; /* Full width image on small screens */
+    }
+
+    .banner-content h2 {
+        font-size: 24px; /* Smaller heading size on mobile */
+    }
+
+    .banner-content p {
+        font-size: 14px; /* Smaller text for mobile */
+    }
+
+    .explore-btn {
+        font-size: 14px;
+        padding: 10px 18px; /* Smaller button padding for mobile */
+    }
+}

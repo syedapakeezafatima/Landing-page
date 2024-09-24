@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Navbar Section -->
+ <!-- Navigation Bar -->
+ <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Coffee Logo">
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Coffee</a></li>
+      <li><a href="#">Bakery</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+
+    <!-- Additional Actions (Search and Sign up) -->
+    <div class="nav-actions">
+      <div class="search-icon">
+        <i class="fas fa-search"></i>
+      </div>
+      <a href="#" class="signup-btn">Sign up</a>
+    </div>
+  </nav>
+ 
+
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome!</h1>
+                <h2>We serve the richest coffee<br> in the city!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn order-btn">Order now</a>
+                    <a href="#" class="btn about-btn">Learn About Us</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="beens.png" alt="Coffee beans bag">
+            </div>
+        </section>
+
+        <!-- Offers Section -->
+        <section class="offers">
+            <h3>Offers</h3>
+            <div class="offers-slider">
+                <div class="offer-card">
+                    <img src="1.png" alt="Hot Coffee">
+                    <h3>Hot Coffee</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+                <div class="offer-card">
+                    <img src="2.png" alt="Cold Coffee">
+                    <h3>Cold Coffee</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+                <div class="offer-card">
+                    <img src="3.png" alt="Cup Coffee">
+                    <h3>Cup Coffee</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+                <div class="offer-card">
+                    <img src="4.png" alt="Dessert">
+                    <h3>Dessert</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Our Special Coffee Section -->
+        <section class="special-coffee">
+            <div class="special-coffee-info">
+                <h2>Our Special Coffee</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Dui erat massa condimentum lacus urna interdum quam. Euismod ultrices ac duis at suspendisse cursus sit tempus pulvinar.</p>
+                <a href="#" class="contact-btn">Contact us</a>
+            </div>
+            <div class="coffee-cards">
+                <div class="coffee-card">
+                    <img src="fiest cup.png" alt="Lungo Coffee">
+                    <div class="coffee-card-content">
+                        <h3>Lungo Coffee</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <div class="price-order">
+                            <span>Rs. 199</span>
+                            <a href="#" class="order-btn">Order now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="coffee-card">
+                    <img src="second cup.png" alt="Dalgona Coffee">
+                    <div class="coffee-card-content">
+                        <h3>Dalgona Coffee</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <div class="price-order">
+                            <span>Rs. 139</span>
+                            <a href="#" class="order-btn">Order now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="coffee-card">
+                    <img src="third cup.png" alt="Iced Coffee">
+                    <div class="coffee-card-content">
+                        <h3>Iced Coffee</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <div class="price-order">
+                            <span>Rs. 159</span>
+                            <a href="#" class="order-btn">Order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coffee Bean Banner Section -->
+        <section class="coffee-bean-banner">
+            <img src="main.png" alt="Coffee Beans and Cup">
+            <div class="banner-content">
+                <h2>Check out our best coffee beans</h2>
+                <p>Explore our exclusive collection of freshly roasted beans.</p>
+                <a href="#" class="explore-btn">Explore</a>
+            </div>
+        </section>
+
+        <!-- Happy Customers Section -->
+        <section class="happy-customers">
+            <h2>Our Happy Customers</h2>
+            <div class="customer-cards">
+                <div class="customer-card">
+                    <img src="girl 1.png" alt="Jane Adams" class="customer-photo">
+                    <h3>Jane Adams</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Dui erat massa condimentum lacus urna interdum quam. Euismod ultrices ac duis at suspendisse cursus sit tempus pulvinar.</p>
+                    <div class="customer-rating">
+                        <span class="stars">★★★★☆</span>
+                    </div>
+                </div>
+                <div class="customer-card">
+                    <img src="men.png" alt="Sam Williams" class="customer-photo">
+                    <h3>Sam Williams</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Dui erat massa condimentum lacus urna interdum quam. Euismod ultrices ac duis at suspendisse cursus sit tempus pulvinar.</p>
+                    <div class="customer-rating">
+                        <span class="stars">★★★★☆</span>
+                    </div>
+                </div>
+                <div class="customer-card">
+                    <img src="girl 2.png" alt="Angela Gozzales" class="customer-photo">
+                    <h3>Angela Gozzales</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Dui erat massa condimentum lacus urna interdum quam. Euismod ultrices ac duis at suspendisse cursus sit tempus pulvinar.</p>
+                    <div class="customer-rating">
+                        <span class="stars">★★★☆☆</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h2>Join in and get 15% off!</h2>
+                    <p>Subscribe to our newsletter and get 15% off discount code</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="newsletter-image">
+                    <img src="coffee.png" alt="Coffee Cups">
+                </div>
+            </div>
+        </section>
+    </div> <!-- End of main-container div -->
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>COFFEE</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique.</p>
+          </div>
+          <div class="footer-column">
+            <h3>Privacy</h3>
+            <ul>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Order ahead</a></li>
+              <li><a href="#">Menu</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>About us</h3>
+            <ul>
+              <li><a href="#">Find a location</a></li>
+              <li><a href="#">Our story</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">Plans & pricing</a></li>
+              <li><a href="#">Sell your products</a></li>
+              <li><a href="#">Jobs</a></li>
+            </ul>
+          </div>
+          <div class="footer-column social-media">
+            <h3>Social media</h3>
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright &copy; hksdesign2024. All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
+
+
