@@ -101,32 +101,37 @@ body, html {
 }
 
 .hero-content h1 {
-    color: #ff7a00;
+    color: rgb(198, 100, 23);
     font-size: 60px; /* Larger font size */
+    margin-bottom: 20px; /* Adjust this value to control the gap */
 }
 
 .hero-content h2 {
-    font-size: 44px;
-    margin-bottom: 20px;
+    font-size: 49px;
+    margin-top: 0; /* Set to 0 or adjust as needed */
+    margin-bottom: 15px;
 }
 
 .hero-content p {
     font-size: 20px;
     max-width: 500px;
+    margin-bottom: 70px; /* Add margin-bottom to create space below the paragraph */
 }
 
 .hero-buttons .btn {
+    margin-top: 40px;
     padding: 15px 30px;
     border: none;
-    background-color: #ff7a00;
+    background-color: #f78c28;
     color: white;
     margin-right: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     text-decoration: none;
 }
 
 .hero-buttons .about-btn {
     background-color: transparent;
+    border-radius: 30px;
     color: white;
     border: 2px solid white;
 }
@@ -388,19 +393,14 @@ body, html {
 .customer-rating {
     font-size: 20px; /* Adjust size as needed */
     margin-top: 10px;
+    color: yellow;
 }
 
-.star {
-    color: lightgray; /* Color for unfilled stars */
-}
-
-.star.filled {
-    color: yellow; /* Color for filled stars */
-}
 
 
 /* Newsletter Section */
 .newsletter-section {
+    overflow-x: hidden; /* This will prevent the horizontal scroll */
     background-color: #000;
     color: #fff;
     padding: 30px 0;
@@ -408,6 +408,9 @@ body, html {
 }
 
 .newsletter-container {
+    max-width: 100%; /* Ensure the container doesn’t exceed the screen width */
+    margin: 0 auto; /* Center it properly */
+    padding: 0 20px; /* Ensure no excessive side padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -561,6 +564,9 @@ body, html {
         background-color: #000; /* Set a background color for the dropdown */
         border-radius: 0; /* Remove rounded corners */
     }
+    .navbar .logo img {
+        width: 90px;
+    }
 
     .nav-links.show {
         display: flex;
@@ -591,7 +597,10 @@ body, html {
         width: 350px;
         margin-top: 20px;
     }
-
+    .hero-buttons .btn {
+        font-size: 16px; /* Adjust font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
     .offers-slider {
         margin: 0 30px; /* Reduce margins on tablets */
     }
@@ -656,7 +665,9 @@ body, html {
         font-size: 16px; 
         padding: 8px 20px; /* Adjust padding for smaller button */
     }
-
+    .navbar .logo img {
+        width: 80px;
+    }
     .search-icon i {
         font-size: 20px; /* Slightly smaller search icon */
     }
@@ -693,29 +704,26 @@ body, html {
     }
 
     .customer-cards {
+        flex-wrap: wrap;
         gap: 30px;
         flex-direction: column;
         align-items: center;
     }
 
     .newsletter-container {
-        flex-direction: column;
-        text-align: center;
+        
+        flex-direction: column; /* Stack content vertically on small screens */
+        text-align: center; /* Center text */
     }
-
+    
     .newsletter-content, .newsletter-image {
-        flex: none;
-        width: 100%;
-    }
-
-    .newsletter-form {
-        justify-content: center;
-        margin-top: 20px;
+        max-width: 100%; /* Make them full width on smaller screens */
     }
 
     .newsletter-form input[type="email"] {
-        width: 80%;
+        width: 70%; /* Slightly narrower input field */
     }
+   
 
     .footer-container {
         flex-direction: column;
@@ -736,12 +744,16 @@ body, html {
     }
 
     .banner-content p {
-        font-size: 14px; 
+        font-size: 13px; 
     }
 
     .explore-btn {
         font-size: 14px;
         padding: 10px 18px; 
+    }
+    .hero-buttons .btn {
+        font-size: 17px; /* Smaller font size */
+        padding: 9px 14px; /* Smaller padding */
     }
 }
 
@@ -757,7 +769,9 @@ body, html {
         font-size: 28px; 
         margin-bottom: 20px; /* Reduced margin */
     }
-
+    .navbar .logo img {
+        width: 80px;
+    }
     .customer-cards {
 
         flex-direction: column; /* Stack cards vertically */
@@ -773,6 +787,14 @@ body, html {
     .customer-card img {
         width: 70px; 
         height: 80px; /* Maintain aspect ratio */
+    }
+    
+    .banner-content h2 {
+        font-size: 18px; 
+    }
+
+    .banner-content p {
+        font-size: 10px; 
     }
 
     .hero-content h1 {
@@ -791,13 +813,9 @@ body, html {
         margin: 20px 0; /* Margin for spacing */
         margin-top: 20%;
     }
-
     .hero-buttons .btn {
-        width: 100%;
-    }
-
-    .hero-buttons .about-btn {
-        display: none;
+        font-size: 12px; /* Further reduce font size */
+        padding: 4px 8px; /* Adjust padding */
     }
 }
 @media (max-width: 320px) {
@@ -808,6 +826,10 @@ body, html {
     .nav-links {
         gap: 5px; /* Reduce spacing between nav links */
     }
+    
+.navbar .logo img {
+    width: 80px;
+}
 
     .hero-content h1 {
         font-size: 20px;
@@ -823,6 +845,7 @@ body, html {
         padding: 10px;
         margin-bottom: 5px;
     }
+   
 
     .customer-card {
         width: 100%; /* Full width */
@@ -831,6 +854,13 @@ body, html {
 
     .footer {
         padding: 20px 10px;
+    }
+    .banner-content h2 {
+        font-size: 15px; 
+    }
+
+    .banner-content p {
+        font-size: 8px; 
     }
 }
 
