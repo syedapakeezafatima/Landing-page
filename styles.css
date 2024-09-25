@@ -13,7 +13,8 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #000; /* Background matches design */
+    background-color: #000;
+   
 }
 
 .navbar .logo img {
@@ -864,3 +865,30 @@ body, html {
     }
 }
 
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 10px 30px; /* Reduce padding for smaller screens */
+    }
+
+    .nav-links {
+        padding: 10px; /* Adjust padding to fit content properly */
+        gap: 15px; /* Decrease gap between links */
+    }
+
+    .nav-actions {
+        gap: 10px; /* Decrease gap between search and sign-up */
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .signup-btn {
+        padding: 10px 15px; /* Adjust padding */
+    }
+}
