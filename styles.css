@@ -818,6 +818,32 @@ body {
     .navbar .logo img {
         width: 80px;
     }
+    .hero-buttons .btn {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        margin-right: 10px;  /* Reduce margin */
+        font-size: 14px;     /* Optional: adjust font size */
+        display: block;      /* Stack buttons vertically if needed */
+        width: 100%;        /* Make buttons full width */
+    }
+    .special-coffee {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;    /* Center items */
+        padding: 20px;         /* Adjust padding */
+    }
+
+    .special-coffee-info {
+       
+        margin-right: 90px;
+        margin-left: 0;       /* Remove left margin */
+        max-width: 100%;      /* Allow full width */
+        text-align: center;   /* Center text */
+    }
+
+    .coffee-cards {
+        justify-content: center; /* Center coffee cards */
+        padding-left: 0;        /* Remove left padding */
+    }
+    
     .customer-cards {
 
         flex-direction: column; /* Stack cards vertically */
@@ -978,5 +1004,15 @@ body {
     }
     .newsletter-container{
         max-width: 90%;
+    }
+}
+
+@media (max-width: 450px) and (min-width: 321px) {
+    .hero-buttons .btn {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        margin-right: 10px;  /* Reduce margin */
+        font-size: 14px;     /* Optional: adjust font size */
+        display: block;      /* Stack buttons vertically if needed */
+        width: 100%;         /* Make buttons full width */
     }
 }
