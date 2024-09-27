@@ -768,19 +768,20 @@ body {
     .newsletter-form input[type="email"] {
         width: 70%; /* Slightly narrower input field */
     }
+
+    
     .footer-container {
-        justify-content: center; /* Center the content */
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-column {
-        max-width: calc(50% - 10px); /* Two columns per row, accounting for gap */
-        text-align: center; /* Center the text */
-       
+        max-width: 100%;
+        text-align: center;
     }
 
-    .footer-bottom p {
-        font-size: 14px; /* Adjust font size for better readability */
-    }
+    
+
     .coffee-bean-banner img {
         width: 100%; 
     }
