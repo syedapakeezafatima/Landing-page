@@ -218,7 +218,7 @@ body {
     color: #ccc;
 }
 
-/* Special Coffee Section */
+
 /* Special Coffee Section */
 .special-coffee {
     margin-top: 50px;
@@ -727,11 +727,32 @@ body {
         font-size: 18px; /* Reduce paragraph size */
     }
 
+    .happy-customers {
+        padding: 30px 20px;
+    }
+
+    .happy-customers h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
     .customer-cards {
-        flex-wrap: wrap;
-        gap: 30px;
         flex-direction: column;
         align-items: center;
+    }
+
+    .customer-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .customer-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .customer-rating {
+        font-size: 18px;
     }
 
     .newsletter-container {
@@ -886,6 +907,7 @@ body {
     .banner-content p {
         font-size: 8px; 
     }
+    
 }
 
 
@@ -926,30 +948,34 @@ body {
     }
 
     .offer-card {
-        width: 300px; /* Adjust card width for better layout */
+        text-align: center;
+        justify-content: center;
+        width: 250px; /* Adjust card width for better layout */
     }
+    
 
     .coffee-card-content h3 {
         font-size: 20px; /* Slightly smaller title size */
     }
 
     .footer-column {
-        max-width: 180px; /* Adjust footer column width */
+        max-width: 90px; /* Adjust footer column width */
     }
 
     .happy-customers h2 {
-        font-size: 34px; /* Adjust heading size */
+        font-size: 35px; /* Adjust heading size */
     }
-}
-@media (max-width: 1280px) {
-    .offers-slider {
-        justify-content: space-between; /* Space out the cards evenly */
+    .special-coffee-info p {
+        font-weight: lighter;
+        font-size: 18px;
     }
-
-    .offer-card {
-        align-items: center;
-        justify-content: center;
-        width: calc(25% - 50px); /* Set each card to take up 25% of the row, minus space for margins */
-        margin: 0 10px; /* Adjust margins to ensure cards are evenly spaced */
+    .special-coffee-info{
+        margin-left: 70px;
+    }
+    .customer-card {
+        font-size: 15px;
+    }
+    .newsletter-container{
+        max-width: 90%;
     }
 }
